@@ -1,0 +1,65 @@
+
+#input {
+  transform: translate(-7%, -50%);
+  margin: 10px;
+  width: 180px;
+  outline: none;
+  background-color:#17181D;
+  border: none;
+  border-radius: 15px;
+  border-bottom: groove;
+}
+
+.password-control {
+	position: absolute;
+	top: 101px;
+	right: 06px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(/view.svg) 0 0 no-repeat;
+}
+.password-control.view {
+	background: url(/no-view.svg) 0 0 no-repeat;
+}
+
+.btn {
+  position: relative;
+  width: 180px;
+  height: 60px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #91C9FF;
+  outline: none;
+  transition: 1s ease-in-out;
+}
+
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: red;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+}
+
+#span {
+  color: white;
+}
+
+.btn:hover {
+  transition: 1s ease-in-out;
+  background: #59e9df;
+}
+
+.btn:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.btn span {
+  color: black;
+  font-size: 18px;
+  font-weight: 100;
+}
