@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,100&display=swap");
+*,
+*::before,
+*:after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+
+}
+
+.page {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(18, 18, 18);
+}
+.header{
+    position: absolute;
+    top: 0px;
+    height: 50px;
+    width: 100%;
+    background-color: black;
+} 
+
+.header .menu {
+    position: relative;
+    top: 15px;
+}
+.menu nav{
+    display: flex;
+    justify-content: space-around;
+}
+.menu nav .nav{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.page .wrapper{
+    position: relative;
+    max-width: 50%;
+    height: 50%;
+    margin-top: 150px;
+    background-color: wheat;
+    margin-left: auto;
+    margin-right: auto;
+
+} 
+.wrapper .content{
+    position: absolute;
+    margin: 0;
+    top: 20%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+
+}
+.content .buttons {
+    position: relative;
+    max-width: 100%;
+    height: 40%;
+    
+    top:60px;
+
+}
+.errors{
+    position: relative;
+    top:10px;
+     margin: 5px 0;
+    padding: 5px 10px;
+    border: dashed;
+    border-color: rgb(255, 154, 22);
+    text-align: center;
+    font-weight: bold;
+    text-decoration-color: black; 
+}
+
+
+.button{
+    position:absolute;
+    width: 40px;
+    height: 20px;
+    color:green;
+}
+
+
+
+footer {
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    bottom:0;
+    background-color:rgb(37, 37, 37);
+}
